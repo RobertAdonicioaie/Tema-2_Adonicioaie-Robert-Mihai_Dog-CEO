@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Câini - Dog CEO API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🐶 Dog Explorer</h1>
+            <p>Descoperă rase de câini aleatoriu folosind Dog CEO API.</p>
+        </header>
+
+        <div class="controls">
+            <button id="fetch-btn">Adu un alt câine</button>
+        </div>
+
+        <div class="image-container">
+            <img id="dog-image" src="" alt="Apasă butonul pentru a încărca un câine" />
+        </div>
+
+        <div class="history-container">
+            <h3>Istoric Căutări</h3>
+            <table id="history-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Rasă</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="history-body">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
