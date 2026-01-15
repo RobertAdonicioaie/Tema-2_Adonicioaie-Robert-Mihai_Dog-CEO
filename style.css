@@ -1,0 +1,119 @@
+/* 1. Resetare și Setări Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; /* Gri deschis, odihnitor pentru ochi */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* 2. Container Principal - Stil "Card" */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 600px; /* Lățime limitată pentru aspect minimalist */
+    padding: 30px;
+    border-radius: 15px; /* Colțuri rotunjite */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Umbră fină */
+    text-align: center;
+}
+
+/* 3. Header */
+header h1 {
+    color: #4a90e2; /* Albastru modern */
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* 4. Butonul (Interactivitate) */
+.controls {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px; /* Buton tip "pill" */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Tranziție lină pentru hover */
+    box-shadow: 0 4px 6px rgba(74, 144, 226, 0.3);
+}
+
+/* Efect vizual la mouse over */
+button:hover {
+    background-color: #357abd;
+    transform: translateY(-2px); /* Se ridică puțin */
+    box-shadow: 0 6px 12px rgba(74, 144, 226, 0.4);
+}
+
+/* 5. Imaginea */
+.image-container {
+    margin-bottom: 30px;
+    min-height: 200px; /* Păstrează locul ocupat chiar dacă nu e poză */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px; /* Colțuri rotunjite la imagine */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 6. Tabelul (Istoric) */
+.history-container {
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+h3 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Necesar pentru border-radius la tabel */
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 8px; /* Colțuri rotunjite la tabel */
+    border: 1px solid #eee;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa; /* Header gri foarte deschis */
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+tr:last-child td {
+    border-bottom: none; /* Elimină linia de la ultimul rând */
+}
